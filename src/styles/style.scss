@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500;800&display=swap');
+$fontColor: #fff;
+
+body {
+  font-family: Mukta;
+  background-color: #32336c;
+  background-image: linear-gradient(16deg, #32336c 26%, #5755b7 100%);
+  margin: 0;
+  color: $fontColor;
+  height: 100vh;
+}
+
+.stopwatch {
+  margin: 0 auto;
+  max-width: 40rem;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__current-time {
+    font-size: 8rem;
+    margin: 2rem 0;
+    font-weight: 500;
+    letter-spacing: 1rem;
+  }
+
+  &__button {
+    background-color: #ff4747;
+    background-image: linear-gradient(62deg, #ff4747 0%, #bc3e7f 100%);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    color: inherit;
+    font: inherit;
+    margin: 1rem;
+    text-shadow: 0 0;
+    box-shadow: 0 20px 40px 0 rgba(76,104,239,.15);
+    transition: .2s;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    outline: none;
+    &:hover {
+      position: relative;
+      top: -0.2rem;
+      left: -0.2rem;
+      box-shadow: 0 10px 40px 0 rgba(76,104,239,.25);
+    }
+  }
+
+  &__results ul {
+    list-style-type: none;
+    margin: 2rem;
+    padding: 0;
+
+    li {
+      padding: 1rem;
+      border-bottom: 1px dashed rgba(105, 127, 238, 0.25);
+    }
+  }
+  
+}
